@@ -6,3 +6,7 @@ for i in range(n):
     x = int(input()) #количество ягод на кусте
     list1.append(x)
 a = list()
+for i in range(len(list1) - 1):
+    a.append(list1[i - 1] + list1[i] + list1[i + 1])
+a.append(list1[-2] + list1[-1] + list1[0])
+print(max(a))
