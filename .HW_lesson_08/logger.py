@@ -58,8 +58,10 @@ def change_data() -> None:
     data_to_edit = search(data, data_to_edit)
     print(f'Выбранный контакт: {data_to_edit}')
 
-    var = input(f'Удалить или изменить? 1 - удалить, 
-                                        2 - заменить')
+    var = int(input(f'Удалить или изменить?'
+                    f' - 1 \n'
+                    f' - 2 \n'
+                    f'Ваш выбор: \n\n'))
     if var == 1:
         data.remove(data_to_edit)
     elif var == 2:
