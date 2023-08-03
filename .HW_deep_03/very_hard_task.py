@@ -3,13 +3,12 @@
 # 5*x**3 - 3*x**2 - 12 = 0
 # на выходе будет 5x^3 - x^2 + 4х - 7 = 0
 
-import sympy
-import math
-import numpy
+# Р(х) = аn xn+ an 1 хn 1+ + а1 х1 + а0
+import re
+import itertools
 
-mn_f = input().split()[:-2]
-mn_s = input().split()[:-2]
-mn_t = expand(mn_f)
+mn_1 = [i for i in input().split()[:-2]]
+mn_2 = [i for i in input().split()[:-2]]
 
-print(mn_t)
-
+mn_3 = mn_1 + mn_2
+print(mn_3)
