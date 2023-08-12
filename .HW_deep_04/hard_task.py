@@ -26,4 +26,4 @@ for i in range(len(my_list)):
     i += 1
 pos = counts_list.index(max(counts_list))
 res_list = [my_list[pos], my_list[pos] + max(counts_list) - 1]
-print(res_list)
+print('Границы самой длинной последовательности:', res_list, sep='\n')
