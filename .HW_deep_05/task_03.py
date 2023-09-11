@@ -6,7 +6,8 @@ def gen_fibonacci(x: int, y: int, z: int):
         yield x
         x, y = y, x + y
 
-x = int(input("Первое число: "))
+x = in
+t(input("Первое число: "))
 y = int(input("Второе число: "))
 z = int(input("Какое количество чисел вывести: "))
 
