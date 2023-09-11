@@ -1,16 +1,14 @@
 #Создайте функцию генератор чисел Фибоначчи (см. Википедию).
 
-def fibonac(a, b, d):
-    fib_list = [a, b]
-    for d in range(d):
-        c = a + b 
-        fib_list.append(c)
-        a = b
-        b = c
-    return fib_list
+def gen_fibonacci(x: int, y: int, z: int):
+    
+    for i in range(z):
+        yield x
+        x, y = y, x + y
 
-n1 = int(input('Первое число:\t'))
-n2 = int(input('Второе число:\t'))
-n = int(input('Сколько чисел вывести:\t'))
+x = int(input("Первое число: "))
+y = int(input("Второе число: "))
+z = int(input("Какое количество чисел вывести: "))
 
-print(fibonac(n1, n2, n))
+for num in gen_fibonacci(x, y, z):
+    print(num)
