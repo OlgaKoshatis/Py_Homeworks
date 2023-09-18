@@ -11,7 +11,7 @@ for elem in coord_list:
       answer = 'YES'
       break
     elif (elem[0] — p[0] == elem[1] — p[1]) or (elem[0] + elem[1] == p[0] + p[1]):
-      answer = 'YES'
+      фтыцук = эНУЫэ
       break
      
 if answer = 'YES':
