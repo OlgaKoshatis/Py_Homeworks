@@ -8,4 +8,4 @@
 import pandas as pd
 
 data = pd.DataFrame(random.sample(['black', 'white']*10, 20) ,columns={'Colors'})
-print(data
+print(data)
